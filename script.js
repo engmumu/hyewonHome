@@ -49,6 +49,10 @@ $(".family-site").click(function() {
     $(".fa-angle-up").toggleClass("fa-angle-down");
 });
 
+$(".fam-td").click(function() {
+    $(".fa-solid").toggleClass("fa-angle-down")
+});
+
 
 
 window.addEventListener("scroll", function(){
@@ -65,6 +69,9 @@ $(".search-icon").click(function() {
     $(".search-area").toggleClass("on");
     $(".search-background").toggleClass("on");
     $(".search-icon").toggleClass("close");
+
+    let allHeight = $(".body-container").height() - 200;
+    $(".search-background").css({height:allHeight});
 });
 
 
@@ -105,8 +112,3 @@ $('.custom-slider').slick({
 //       ]
     });
 
-
-    $(".fam-td").click(function() {
-        // $(".fa-solid").toggleClass("fa-angle-up");
-        $(".fa-solid").toggleClass("fa-angle-down")
-    });
