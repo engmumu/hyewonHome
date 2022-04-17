@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/78cbb34de2.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>배스킨라빈스</title>
 </head>
 <body>
@@ -30,11 +33,12 @@
                                 <li>고객센터</li>
                                 <li>CONTACT US</li>
                                 <li class="search">
-                                    <a href="#" id="search-icon"><img src="images/icon_search.png" alt="search_btn"></a>
+                                    <a href="#" class="search-icon"></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="search-background"></div>
                     <div class="search-area">
                         <div class="search-wrap">
                             <div class="product-name">
@@ -169,16 +173,16 @@
             </div>
             <div class="banner-area">
                 <div class="slide-wrap">
-                    <ul class="slide-list">
-                        <li><a href="#" class="slide-1"></a></li>
-                        <li><a href="#" class="slide-2"></a></li>
-                        <li><a href="#" class="slide-3"></a></li>
-                    </ul>
+                    <div class="custom-slider">
+                        <div class="custom-box" style="background: #2cafe5;"><img src="images/1643855764.jpg" alt=""></div> 
+                        <div class="custom-box" style="background: #f6f7f7;"><img src="images/1648962241.png" alt=""></div> 
+                        <div class="custom-box" style="background: #6ebdea;"><img src="images/1648967588.png" alt=""></div> 
+                      </div>
                 </div>
-                <div class="btns">
+                <!-- <div class="btns">
                     <a href="#" class="left"><i class="fa-solid fa-chevron-left"></i></a>
                     <a href="#" class="right"><i class="fa-solid fa-chevron-right"></i></a>
-                </div>                    <!-- .btns -->
+                </div>                    .btns -->
                 <!-- <ul class="bn-slide">
                     <li><span class="bn-active"></span></li>
                     <li><span></span></li>
@@ -334,16 +338,16 @@
                             </div>
                         </li>
                     </ul>
-                    <dl class="family-site">
-                        <dt>FAMILY SITE <i class="fa-solid fa-angle-up"></i></dt>
-                        <div class="ab">
-                            <dd>family1</dd>
-                            <dd>family2</dd>
-                            <dd>family3</dd>
-                            <dd>family4</dd>
-                            <dd>family5</dd>
-                        </div>
-                    </dl>
+                    <div class="family-site">
+                        <button class="family-btn">FAMILY SITE <i class="fa-solid fa-angle-up"></i></button>
+                        <ul class="ab">
+                            <li>family1</li>
+                            <li>family2</li>
+                            <li>family3</li>
+                            <li>family4</li>
+                            <li>family5</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="address-area">
@@ -354,7 +358,9 @@
             </div>
         </footer>
     </div>
-
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+    
     <script src="script.js"></script>
 
 </body>
